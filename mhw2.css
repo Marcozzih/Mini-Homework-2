@@ -1,0 +1,282 @@
+body {
+  color: white;
+  margin: 0;
+}
+
+a {
+  cursor: pointer; 
+}
+
+nav {
+  height: 80px;
+  font-family: 'Sofia', sans;
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;  
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  
+  background-color: black;
+}
+nav #titolo {
+  font-size: 2rem;
+  margin: 40px;
+}
+
+nav #link a {
+  margin: 0px 3vw;
+}
+
+a.button {
+  background-color: rgb(255, 200, 8, 1);
+  padding: 10px 14px;
+  border-radius: 5px;
+}
+
+a.button:hover {
+  background-color: rgb(255, 200, 8, 0.9);
+}
+
+header {  
+  height: 600px;
+  font-family: 'Roboto', verdana;
+  
+  background-image: url(https://static.billboard.com/files/media/music-listening-illustration-2019-billboard-1548-768x433.jpg);  
+  background-size: cover;  
+  position: relative;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+}
+ 
+.overlay { 
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+header .mainFrase {
+  text-align: center;
+  line-height: 70px;  
+  font-size: 80px;
+  z-index: 1;
+}
+
+.mainFrase a:hover {
+  color: rgb(220, 220, 220);
+}
+
+header nav,
+section a {
+  letter-spacing: 2px;
+}
+
+
+section {
+  color: black;
+}
+
+section #up {
+  
+  margin: 50px 10vw;
+  height: 500px;
+  background-image: url(https://dday.imgix.net/system/uploads/news/main_image/34307/vinyl-records-discs.jpg?w=702&h=360&fit=crop&auto=format%2Ccompress&s=66de7028c4e3de1df8a167a495910fcf);
+  background-size: cover;
+  position: relative;
+  
+
+  text-align: center;
+}
+
+#up .overlay { 
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 70%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+}
+
+#up a {
+  font-family: 'New Tegomin', serif;
+  color: rgb(230, 160, 100);
+  position: absolute;
+  top: 70%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  font-size: 100px;
+  z-index: 1;
+}
+
+
+section #down {
+  display: flex;
+  flex-direction: column;
+  font-size: 13px;
+}  
+
+section #piu {
+  text-align: center;
+  color: black;
+}
+
+#down .search {
+  font-size: 20px;
+  font-family: serif;
+  display: flex;
+  justify-content: space-between;
+ 
+}
+
+
+#albums{
+  display: flex;
+  justify-content: space-around;
+  padding: 0px 50px;
+  margin-top: 20px;
+
+  color: black;
+  font-family: 'Trirong', Arial;
+}
+
+
+#albums img {
+  display: block;
+
+  width: 200px;
+  height: 200px;
+  border: .5px solid black;
+}
+
+
+.prodotto {
+  width: 200px;
+}
+
+.prodotto h2 {
+  text-align: center;
+  color: black;
+}
+
+
+
+.info h2 {
+  cursor: pointer;
+}
+
+.album a {
+  display: block;
+}
+
+.desc {
+  display: none;
+  padding-top: 15px;
+}
+
+.hidden {
+  display: none;
+}
+
+#contPreferiti {
+  margin: 5px 30px;
+  font-size: 20px;
+}
+
+#preferiti{
+  display: flex;
+  justify-content: space-around;
+  padding: 0px 50px;
+  margin-top: 20px;
+
+  color: black;
+  font-family: 'Trirong', Arial;
+}
+
+
+#preferiti img {
+  display: block;
+
+  width: 200px;
+  height: 200px;
+  border: .5px solid black;
+}
+
+
+
+
+footer {
+  font-family: 'Audiowide', helvetica;
+  color: gray;
+  height: 100px;
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+ 
+}
+
+footer h1{
+  font-size: 15px;
+}
+
+#menu {
+ display: none;
+}
+#menu div{
+ width: 25px;
+ height: 3px;
+ background-color: white;
+ margin: 5px 40px;
+ border-radius: 5px;
+}
+
+@media (max-width: 700px) {
+ #link {
+ display: none;
+ }
+ #menu
+ {
+ display: block;
+ }
+}
+
+@media (max-width: 700px) {
+
+
+#albums{
+  flex-direction: column;
+}
+  #albums img {
+    width: 200px;
+  height: 100%;
+  }
+
+#albums div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 100px;
+  
+  }
+  
+  #albums div a {
+    font-size: 20px;
+
+  }
+  
+section {
+  height: 2200px;  
+}
+  
+}
+
